@@ -4,3 +4,9 @@ document.querySelectorAll(".btn").forEach((el) => {
     elImg.src = `/images/${e.target.innerText}.png`;
   });
 });
+
+const elCur = document.getElementById("crsor");
+document.addEventListener("mousemove", (e) => {
+  elCur.style.left = e.pageX + "px";
+  elCur.style.top = e.pageY + "px";
+});
